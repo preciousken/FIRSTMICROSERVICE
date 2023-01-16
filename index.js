@@ -11,6 +11,12 @@ require('./db/connect')
 dotenv.config();
 const app = express();
 
+app.get('/',(req,res)=>{
+    res.json({
+      baseURL: 'You are welcome to '+req.protocol+'://'+req.hostname+' go ahead and redirect at /:urlId'
+    })
+  })
+
 // middleware goes in here
 app.use(express.json());
 app.use('/',router)
