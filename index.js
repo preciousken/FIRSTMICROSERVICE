@@ -13,7 +13,7 @@ const app = express();
 
 app.get('/',(req,res)=>{
     res.json({
-      baseURL: 'You are welcome to '+req.protocol+'://'+req.hostname+' go ahead and redirect at /:urlId'
+      guide: ' go ahead and redirect at http://shorten-url-y792.onrender.com/:urlId'
     })
   })
 
